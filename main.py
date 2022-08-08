@@ -1,3 +1,5 @@
+# Before running this code you have to install pyttsx3 module in your machine
+
 import pyttsx3
 import Rock as r
 import quiz as q
@@ -42,8 +44,10 @@ try:
         usr_input = int(input("Type here to select : "))
         while usr_input != 3:
             if usr_input == 1:
+                #the quiz game function is in the quiz.py file 
                 q.game()
             elif usr_input == 2:
+                #rock game function is in the rock.py file
                 r.game()
             else:
                 print("Please type valid number ;(")
